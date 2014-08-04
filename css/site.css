@@ -5,12 +5,15 @@
 }
 
 #logo h1 {
+  margin-top: 52px;
   text-align: left;
   margin-bottom: 0px;
 }
 
 #logo .description {
   margin-top: 32px;
+
+  color: ;
 
   font-family: "AvenirNextRoundedW01-Bo 1075574";
   text-align : left;
