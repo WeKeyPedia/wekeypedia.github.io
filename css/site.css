@@ -1,3 +1,23 @@
+#logo {
+}
+
+#logo .row {
+}
+
+#logo h1 {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#logo .description {
+  margin-top: 32px;
+
+  font-family: "AvenirNextRoundedW01-Bo 1075574";
+  text-align : left;
+  font-size: 32px;
+  line-height: 48px;
+}
+
 .rethink .fa-circle    { color: #FFDD00; }
 .experiment .fa-circle { color: #2EAC66; }
 .transmit .fa-circle   { color: #009EE3; }
