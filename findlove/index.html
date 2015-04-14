@@ -56,7 +56,7 @@
   <script type="text/javascript">
   $(document).ready(function(){
     $(".love").on("click", function(e){
-      destination = "http://en.wikipedia.org/w/index.php?title=Love&diff="+$(e.target).data("data-revision_id")+"&oldid=prev";
+      destination = "http://en.wikipedia.org/w/index.php?title=Love&diff="+$(e.target).data("revision_id")+"&oldid=prev";
       window.location.href = destination;
     });
   });
