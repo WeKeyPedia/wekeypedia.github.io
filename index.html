@@ -63,7 +63,7 @@ and <a href="">web litteracy</a>.
 
     {% if project.github %}
       <a href="{{ project.github }}">
-          <i class="fa fa-github-alt"></"></i> <span class="text">github</span>
+          <i class="fa fa-github-alt"></i> <span class="text">github</span>
       </a>
     {% endif %}
 
@@ -83,29 +83,46 @@ and <a href="">web litteracy</a>.
 
 <div id="talks" class="row">
   <div class="col-md-3"><h2>talks</h2></div>
+  <div class="col-md-9">
+  {% for talk in site.talks %}
+  <div class="talk">
+    <h3>{{ talk.title }}</h3>
+  </div>
+  {% endfor %}
+  </div>
 </div><!-- /talks -->
+
+<div id="workshops" class="row">
+  <div class="col-md-3"><h2>workshops</h2></div>
+  <div class="col-md-9">
+  </div>
+</div><!-- /workshops -->
 
 <div id="publications" class="row">
   <div class="col-md-3"><h2>publications</h2></div>
+  <div class="col-md-9">
+    no publications yet
+  </div>
 </div><!-- /publications -->
 
 <div class="row" id="team">
   <div class="col-md-3"><h2>team</h2></div>
   <div class="col-md-9">
-    <ul>
-      <li>
-        tam kien duong
+  {% for member in site.members %}
+  <div class="member col-md-3">
+    <h4>{{ member.name }}</h4>
 
-        <a href="mailto:tamkien@cri-paris.org">mail</a>
-        <a href="https://univ-paris5.academia.edu/tamkienduong">academia</a>
-        <a href="http://twitter.com/taniki">twitter</a>
-      </li>
-      <li>
-        jérémie dusart
+    <div class="affiliation">{{ member.affiliation }}</div>
 
-        <a href="mailto:dusart@liafa.univ-paris-diderot.fr ">mail</a>
-      </li>
-    </ul>
+    <div class="links">
+      {% if member.mail %}<a href="mailto:{{ member.mail }}">{{ member.mail }}</a>{% endif %}
+      {% if member.twitter %}<a href="http://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>{% endif %}
+      {% if member.github %}<a href="http://github.com/{{ member.github }}"><i class="fa fa-github-alt"></i> {{ member.github }}</a>{% endif %}
+      {% if member.academia %}<a href="{{ member.academia }}"><i class="fa fa-university"></i> academia</a>{% endif %}
+    </div>
+
+  </div>
+  {% endfor %}
   </div>
 </div><!-- /collaborators -->
 

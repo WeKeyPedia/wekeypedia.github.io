@@ -2,7 +2,9 @@ name: WeKeyPedia
 markdown: redcarpet
 highlighter: pygments
 collections:
-- projects
+  - projects
+  - members
+  - talks
 defaults:
   - scope:
       type: projects
