@@ -1,10 +1,18 @@
-#logo {
-}
-
-#logo .row {
+.row h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 36px;
+  line-height : 57px;
+  vertical-align:middle;
+  padding:0;
+  margin:0;
+  text-align: right;
+  color: #104e90;
 }
 
 #logo h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 80px;
+  font-weigth: 900;
   margin-top: 52px;
   text-align: left;
   margin-bottom: 0px;
@@ -15,7 +23,7 @@
 
   color: ;
 
-  font-family: "AvenirNextRoundedW01-Bo 1075574";
+  font-family: 'Varela Round', sans-serif;
   text-align : left;
   font-size: 32px;
   line-height: 48px;
@@ -24,3 +32,32 @@
 .rethink .fa-circle    { color: #FFDD00; }
 .experiment .fa-circle { color: #2EAC66; }
 .transmit .fa-circle   { color: #009EE3; }
+
+#follow_us {
+  background: #ddfbfe;
+  padding : 10px 0;
+  text-align: left;
+}
+
+#follow_us a {
+  border: 0;
+  padding : 1px 10px 0px 1px;
+  vertical-align: middle;
+}
+
+#follow_us div a:first-child {
+  margin-right: 30px;
+}
+
+#follow_us a span.fa-stack {
+  vertical-align: middle;
+}
+
+#follow_us a span.text {
+font-size: 36px;
+vertical-align : middle;
+line-height: 36px;
+}
+
+
+.fa-github-alt { color: rgb(51, 122, 183); }
