@@ -1,3 +1,7 @@
+body > div:first-child {
+  padding-top: 15px;
+}
+
 .row h2 {
   font-family: 'Varela Round', sans-serif;
   font-size: 36px;
@@ -16,6 +20,14 @@
   margin-top: 52px;
   text-align: left;
   margin-bottom: 0px;
+}
+
+#logo div:first-child {
+  text-align: right;
+}
+
+#logo img {
+  width: 200px;
 }
 
 #logo .description {
