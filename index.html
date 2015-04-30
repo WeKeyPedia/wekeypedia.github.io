@@ -5,24 +5,29 @@ title: WeKeyPedia
 
 <div class="container-fluid text-center">
 
-  <div class="row" id="logo">
-    <div class="col-md-3">
-      <img src="/images/logo.svg" />
-    </div>
-
-    <div class="col-md-9">
-      <h1>wekeypedia</h1>
-
-      <p class="description">
-        is a <a href="http://cri-paris.org">CRI</a> research project<br>
-        about <a href="">thinking</a> and <a href="">building</a><br>
-        concepts, tools and dispositifs<br>
-        to power up learning experience<br>
-        through <a href="">collective intelligence</a><br>
-        and <a href="">web litteracy</a>.
-      </p>
-    </div>
+<div class="row" id="logo">
+  <div class="col-md-3">
+    <img src="/images/logo.svg" />
   </div>
+
+  <div class="col-md-9">
+    <h1>wekeypedia</h1>
+
+    <p class="description">
+    is a project funded by <a href="http://www.sorbonne-paris-cite.fr/">Sorbonne
+    Paris Cité</a><br>
+    and hosted at <a href="http://cri-paris.org">CRI</a> (UP5) and <a href="http://www.liafa.jussieu.fr/">LIAFA</a> (UP7)
+
+<!--         is a <a href="http://cri-paris.org">CRI</a> research project<br>
+about <a href="">thinking</a> and <a href="">building</a><br>
+concepts, tools and dispositifs<br>
+to power up learning experience<br>
+through <a href="">collective intelligence</a><br>
+and <a href="">web litteracy</a>.
+-->
+    </p>
+  </div>
+</div><!-- /logo -->
 
 <div class="row" id="follow_us">
   <div class="col-md-3"><h2>follow us</h2></div>
@@ -40,10 +45,70 @@ title: WeKeyPedia
       </span>
       <span class="text">github</span>
     </a>
+  </div>
+</div><!-- /follow-us -->
 
+<div id="works" class="row">
+  <div class="col-md-3"><h2>works</h2></div>
+
+  <div class="col-md-9">
+  {% assign project_sorted =  site.projects | sort: "importance" %}
+  {% for project in project_sorted %}
+  <div class="project">
+    {% if project.website %}
+      <h3><a href="{{ project.website }}">{{ project.title }}</a></h3>
+    {% else %}
+      <h3>{{ project.title }}</h3>
+    {% endif %}
+
+    {% if project.github %}
+      <a href="{{ project.github }}">
+          <i class="fa fa-github-alt"></"></i> <span class="text">github</span>
+      </a>
+    {% endif %}
+
+    {% if project.keywords %}
+      <div class="keywords">
+      {% for k in project.keywords %}
+      <a href="">#{{ k }}</a>
+      {% endfor %}
+      </div>
+    {% endif %}
 
   </div>
-</div>
+  {% endfor %}
+  </div>
+
+</div><!-- /works -->
+
+<div id="talks" class="row">
+  <div class="col-md-3"><h2>talks</h2></div>
+</div><!-- /talks -->
+
+<div id="publications" class="row">
+  <div class="col-md-3"><h2>publications</h2></div>
+</div><!-- /publications -->
+
+<div class="row" id="team">
+  <div class="col-md-3"><h2>team</h2></div>
+  <div class="col-md-9">
+    <ul>
+      <li>
+        tam kien duong
+
+        <a href="mailto:tamkien@cri-paris.org">mail</a>
+        <a href="https://univ-paris5.academia.edu/tamkienduong">academia</a>
+        <a href="http://twitter.com/taniki">twitter</a>
+      </li>
+      <li>
+        jérémie dusart
+
+        <a href="mailto:dusart@liafa.univ-paris-diderot.fr ">mail</a>
+      </li>
+    </ul>
+  </div>
+</div><!-- /collaborators -->
+
 </div>
 
 
@@ -93,6 +158,8 @@ title: WeKeyPedia
     <h3>become</h3>
     </div>
   </div>
+
+
 </div>
 
 <h2>goals</h2>

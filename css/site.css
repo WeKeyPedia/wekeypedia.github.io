@@ -1,5 +1,6 @@
 body > div:first-child {
   padding-top: 15px;
+  text-align: left;
 }
 
 .row h2 {
@@ -31,9 +32,8 @@ body > div:first-child {
 }
 
 #logo .description {
-  margin-top: 32px;
-
-  color: ;
+  margin-left: 15px;
+  color: #8e8e8e;
 
   font-family: 'Varela Round', sans-serif;
   text-align : left;
@@ -71,5 +71,8 @@ vertical-align : middle;
 line-height: 36px;
 }
 
+#works .keywords {
+  margin-top : 10px;
+}
 
 .fa-github-alt { color: rgb(51, 122, 183); }

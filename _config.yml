@@ -1,3 +1,10 @@
 name: WeKeyPedia
 markdown: redcarpet
 highlighter: pygments
+collections:
+- projects
+defaults:
+  - scope:
+      type: projects
+    values:
+      importance: "2 - side projects"
