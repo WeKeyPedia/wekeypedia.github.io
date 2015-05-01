@@ -1,0 +1,164 @@
+---
+---
+
+$grey: #8e8e8e;
+$light-grey: #c0c0c0;
+
+body > div:first-child {
+  padding-top: 15px;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+/*******************************************************************************
+GENERIC
+*******************************************************************************/
+
+.row h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 36px;
+  line-height : 57px;
+  vertical-align:middle;
+  padding:0;
+  margin:0;
+  text-align: right;
+  /* color: #104e90; */
+  color: #1a71ac;
+}
+
+.row .empty {
+  font-size: 36px;
+  font-weight : 300;
+  font-style: italic;
+  line-height : 57px;
+  color: $light-grey;
+}
+
+.fa-github-alt { color: rgb(51, 122, 183); }
+
+/*******************************************************************************
+PARTS
+*******************************************************************************/
+
+#logo {
+
+  h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    font-weigth: 900;
+    margin-top: 52px;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  div:first-child {
+    text-align: right;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .description {
+    margin-left: 15px;
+    color: #8e8e8e;
+
+    font-family: 'Varela Round', sans-serif;
+    text-align : left;
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+#follow_us {
+  /* background: #ddfbfe; */
+  padding : 10px 0;
+  text-align: left;
+
+  a {
+    border: 0;
+    padding : 1px 10px 0px 1px;
+    vertical-align: middle;
+
+    span.fa-stack {
+      vertical-align: middle;
+    }
+
+    span.text {
+    font-size: 36px;
+    vertical-align : middle;
+    line-height: 36px;
+    }
+  }
+
+  div a:first-child {
+    margin-right: 30px;
+  }
+}
+
+#works {
+  .project {
+    margin-bottom: 15px;
+  }
+
+  .keywords {
+    margin-top : 10px;
+  }
+}
+
+#talks {
+
+  .subtitle {
+    font-size: 18px;
+    color: #c0c0c0;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  .content {
+    margin: 10px 0;
+  }
+
+  .subtitle a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+#workshops {
+  @extend #talks;
+
+  .collaboration {
+    font-size: 18px;
+    color: $grey;
+    margin: 0 0 5px 0;
+  }
+}
+
+#team {
+
+  > div:nth-child(2){
+    padding-top: 14px;
+  }
+
+  .member {
+    h4 {
+      text-align : center;
+    }
+
+    .affiliation {
+      color: $light-grey;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    .links a {
+      display: block;
+      text-align : center;
+    }
+  }
+}
