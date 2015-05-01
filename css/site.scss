@@ -162,3 +162,15 @@ PARTS
     }
   }
 }
+
+#credits {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 0.8em;
+  color: $light-grey;
+
+  a {
+    color: $grey;
+    text-decoration: underline;
+  }
+}
