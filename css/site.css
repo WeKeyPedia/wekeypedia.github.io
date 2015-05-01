@@ -12,7 +12,8 @@ body > div:first-child {
   padding:0;
   margin:0;
   text-align: right;
-  color: #104e90;
+  /* color: #104e90; */
+  color: #1a71ac;
 }
 
 .row .empty {
