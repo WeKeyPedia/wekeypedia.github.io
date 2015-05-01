@@ -101,6 +101,27 @@ line-height: 36px;
   margin: 10px 0;
 }
 
+
+#workshops .subtitle {
+  font-size: 18px;
+  color: #c0c0c0;
+}
+
+#workshops .subtitle a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+#workshops .collaboration {
+  font-size: 18px;
+  color: black;
+  margin: 0 0 5px 0;
+}
+
+#workshops .content {
+  margin: 10px 0;
+}
+
 #team > div:nth-child(2){
   padding-top: 14px;
 

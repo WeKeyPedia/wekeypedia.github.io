@@ -100,6 +100,27 @@ and <a href="">web litteracy</a>.
 <div id="workshops" class="row">
   <div class="col-md-3"><h2>workshops</h2></div>
   <div class="col-md-9">
+  {% for workshop in site.workshops %}
+  <div class="workshop">
+    <h3>{{ workshop.title }}</h3>
+
+    {% if workshop.collaborations %}
+      <div class="collaboration">
+      in collaboration with
+
+      {% for collaborator in workshop.collaborations%}
+      <span>{{ collaborator.name }}</span>
+      {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="subtitle">{{ workshop.date }} — <a href="{{workshop.event.url}}">{{ workshop.event.name }}</a> ({{ workshop.event.location }})</div>
+
+    {% if workshop.content %}
+    <div class="content">{{workshop.content}}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
   </div>
 </div><!-- /workshops -->
 

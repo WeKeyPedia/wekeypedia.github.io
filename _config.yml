@@ -5,6 +5,7 @@ collections:
   - projects
   - members
   - talks
+  - workshops
 defaults:
   - scope:
       type: projects
