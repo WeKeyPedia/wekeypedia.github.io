@@ -87,6 +87,11 @@ and <a href="">web litteracy</a>.
   {% for talk in site.talks %}
   <div class="talk">
     <h3>{{ talk.title }}</h3>
+    <div class="subtitle">{{ talk.date }} — {{talk.speaker}} — <a href="{{talk.event.url}}">{{ talk.event.name }}</a> ({{ talk.event.location }})</div>
+
+    {% if talk.content %}
+    <div class="content">{{talk.content}}</div>
+    {% endif %}
   </div>
   {% endfor %}
   </div>
@@ -127,79 +132,5 @@ and <a href="">web litteracy</a>.
 </div><!-- /collaborators -->
 
 </div>
-
-
-<div class="container" style="display:none;">
-
-<div class="row">
-  <div class="col-md-4 rethink">
-    <div class="text-center">
-    <span class="fa-stack fa-4x">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
-    </span>
-    </div>
-
-    <div class="text-center">
-
-    <h3>rethink</h3> <div class="subtitle">your knowledge ecosystem</div>
-
-    <p>Wekeypedia is a research platform to meet and discuss ideas about how to change learning to adapt it to daily contemporary lifes (i.e. not only the student life) and technologies.</p>
-
-    <p>It also central in our researches to understand the dynamic of the relationship between indivuals and collectives that transform knowledge process into a collective intelligence.</p>
-
-    </div>
-  </div>
-  <div class="col-md-4 experiment">
-    <div class="text-center">
-    <span class="fa-stack fa-4x">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
-    </span>
-    </div>
-
-    <div class="text-center">
-    <h3>experiment</h3> on your data
-    </div>
-  </div>
-
-  <div class="col-md-4 transmit">
-    <div class="text-center">
-    <span class="fa-stack fa-4x">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-    </span>
-    </div>
-
-    <div class="text-center">
-    <h3>become</h3>
-    </div>
-  </div>
-
-
-</div>
-
-<h2>goals</h2>
-
-<div class="intermediary_goal">
-  synchronology
-</div>
-
-
-<div class="intermediary_goal">
-  ski slopes UI
-</div>
-
-<div class="medium_goal">
-ski slopes
-</div>
-
-<div class="big_goal">
-global consciousness
-</div>
-
-<h2>prototypes</h2>
-
-<h2>team</h2>
 
 </div>
