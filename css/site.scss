@@ -1,6 +1,7 @@
 ---
 ---
 
+$blue: #1a71ac;
 $grey: #8e8e8e;
 $light-grey: #c0c0c0;
 
@@ -14,24 +15,31 @@ body > div:first-child {
 GENERIC
 *******************************************************************************/
 
-.row h2 {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 36px;
-  line-height : 57px;
-  vertical-align:middle;
-  padding:0;
-  margin:0;
-  text-align: right;
-  /* color: #104e90; */
-  color: #1a71ac;
-}
+.row {
 
-.row .empty {
-  font-size: 36px;
-  font-weight : 300;
-  font-style: italic;
-  line-height : 57px;
-  color: $light-grey;
+  h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 36px;
+    line-height : 57px;
+    vertical-align:middle;
+    padding:0;
+    margin:0;
+    text-align: right;
+    /* color: #104e90; */
+    color: $blue;
+  }
+
+  h3 {
+    margin-top: 18px;
+  }
+
+  .empty {
+    font-size: 36px;
+    font-weight : 300;
+    font-style: italic;
+    line-height : 57px;
+    color: $light-grey;
+  }
 }
 
 .fa-github-alt { color: rgb(51, 122, 183); }
@@ -71,11 +79,17 @@ PARTS
 }
 
 #follow_us {
-  /* background: #ddfbfe; */
+  // background: $blue;
   padding : 10px 0;
   text-align: left;
 
+  h2 {
+    // color: #f3f3f3;
+  }
+
   a {
+    // background-color: white; // 731f43
+    // color: $blue;
     border: 0;
     padding : 1px 10px 0px 1px;
     vertical-align: middle;

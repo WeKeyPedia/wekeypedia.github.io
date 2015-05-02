@@ -1,5 +1,5 @@
 ---
-date: 03.2014
+date: "03.2014"
 title: Webdesign and research
 event:
   name: Web@cadémie
