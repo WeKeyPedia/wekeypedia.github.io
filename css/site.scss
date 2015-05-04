@@ -81,7 +81,17 @@ PARTS
     line-height: 40px;
 
     a {
+      background: rgb(255, 238, 172);
       color: #e25d5d;
+      padding: 0 2px;
+      line-height: 1em;
+      display: inline-block;
+      box-shadow: 0 -4px 0 #ffacac inset;
+
+      &:hover {
+        text-decoration: none;
+        box-shadow: 0 -4px 0 rgba(#e25d5d, 0.7) inset;
+      }
     }
   }
 }
@@ -128,12 +138,12 @@ PARTS
     a {
       box-shadow: 0 -4px 0 $blue-bright-pale inset;
       //border-bottom: 3px solid $blue-bright-pale;
-    }
 
-    a:hover {
-      color: $blue;
-      text-decoration:none;
-      border-bottom-color: $blue-bright;
+      &:hover {
+        color: $blue;
+        box-shadow: 0 -4px 0 rgba($blue, 0.5) inset;
+        text-decoration:none;
+      }
     }
   }
 
@@ -143,6 +153,11 @@ PARTS
     a {
       box-shadow: 0 -2px 0 $blue-bright-pale inset;
       //border-bottom-width: 2px;
+
+      &:hover {
+        box-shadow: 0 -2px 0 rgba($blue, 0.5) inset;
+        text-decoration:none;
+      }
     }
   }
 
