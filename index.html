@@ -61,11 +61,13 @@ and <a href="">web litteracy</a>.
       <h3>{{ project.title }}</h3>
     {% endif %}
 
+    <div class="links">
     {% if project.github %}
       <a href="http://github.com/{{ project.github }}">
           <i class="fa fa-github-alt"></i> <span class="text">github</span>
       </a>
     {% endif %}
+    </div>
 
     {% if project.keywords %}
       <div class="keywords">

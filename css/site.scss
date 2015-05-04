@@ -126,7 +126,8 @@ PARTS
     margin-bottom: 15px;
 
     a {
-      border-bottom: 3px solid $blue-bright-pale;
+      box-shadow: 0 -4px 0 $blue-bright-pale inset;
+      //border-bottom: 3px solid $blue-bright-pale;
     }
 
     a:hover {
@@ -139,7 +140,14 @@ PARTS
   .keywords {
     margin-top : 10px;
 
-    a { border-bottom-width: 2px; }
+    a {
+      box-shadow: 0 -2px 0 $blue-bright-pale inset;
+      //border-bottom-width: 2px;
+    }
+  }
+
+  .links {
+    @extend .keywords;
   }
 
 }
