@@ -2,6 +2,8 @@
 ---
 
 $blue: #1a71ac;
+$blue-bright: #0cceec;
+$blue-bright-pale: #8bf3fd;
 $grey: #8e8e8e;
 $light-grey: #c0c0c0;
 
@@ -122,11 +124,24 @@ PARTS
 #works {
   .project {
     margin-bottom: 15px;
+
+    a {
+      border-bottom: 3px solid $blue-bright-pale;
+    }
+
+    a:hover {
+      color: $blue;
+      text-decoration:none;
+      border-bottom-color: $blue-bright;
+    }
   }
 
   .keywords {
     margin-top : 10px;
+
+    a { border-bottom-width: 2px; }
   }
+
 }
 
 #talks {
