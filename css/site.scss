@@ -6,9 +6,7 @@ $grey: #8e8e8e;
 $light-grey: #c0c0c0;
 
 body > div:first-child {
-  padding-top: 15px;
   text-align: left;
-  padding-bottom: 15px;
 }
 
 /*******************************************************************************
@@ -49,9 +47,12 @@ PARTS
 *******************************************************************************/
 
 #logo {
+  padding: 20px 0;
+  background: rgba(255, 225, 31, 0.8);
 
   h1 {
     font-family: 'Varela Round', sans-serif;
+    color: #1b1b1b;
     font-size: 80px;
     font-weigth: 900;
     margin-top: 52px;
@@ -69,22 +70,29 @@ PARTS
 
   .description {
     margin-left: 15px;
-    color: #8e8e8e;
+    color: #5b5b5b; //#8e8e8e;
 
     font-family: 'Varela Round', sans-serif;
     text-align : left;
     font-size: 32px;
-    line-height: 48px;
+    line-height: 40px;
+
+    a {
+      color: #e25d5d;
+    }
   }
 }
 
 #follow_us {
+  background: #0cceec;
+  // background: #f48628;
   // background: $blue;
   padding : 10px 0;
   text-align: left;
 
   h2 {
     // color: #f3f3f3;
+    color: white;
   }
 
   a {
