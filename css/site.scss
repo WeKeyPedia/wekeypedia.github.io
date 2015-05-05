@@ -1,5 +1,6 @@
 ---
 ---
+@import "css/kerning.css";
 
 $blue-dark: #525252;
 $blue: #1a71ac;
@@ -13,6 +14,11 @@ body > div:first-child {
   text-align: left;
 }
 
+// $serif: "EB Garamond", serif;
+$sans-rounded: "Varela Round", sans-serif;
+$serif: "Libre Baskerville", serif;
+$sans-serif: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+
 /*******************************************************************************
 GENERIC
 *******************************************************************************/
@@ -20,7 +26,8 @@ GENERIC
 .row {
 
   h2 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: $sans-rounded; // 'Varela Round', sans-serif;
+    font-weight: 700;
     font-size: 36px;
     line-height : 57px;
     vertical-align:middle;
@@ -55,14 +62,14 @@ PARTS
   background: rgba(255, 225, 31, 0.8);
 
   h1 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
     color: #1b1b1b;
     font-size: 80px;
     font-weigth: 900;
     margin-top: 52px;
     text-align: left;
     margin-bottom: 0px;
-    letter-spacing: -3px;
   }
 
   div:first-child {
@@ -77,7 +84,7 @@ PARTS
     margin-left: 15px;
     color: #5b5b5b; //#8e8e8e;
 
-    font-family: 'Varela Round', sans-serif;
+    font-family: $sans-rounded;
     text-align : left;
     font-size: 32px;
     line-height: 40px;
@@ -153,13 +160,14 @@ PARTS
     margin-top: 0px;
     font-size: 16px;
     color: #525252;
+    font-family: $serif;
 
     a {
-      box-shadow: 0 -2px 0 $blue-bright-pale inset;
+      box-shadow: 0 -3px 0 $blue-bright-pale inset;
       //border-bottom-width: 2px;
 
       &:hover {
-        box-shadow: 0 -2px 0 rgba($blue, 0.5) inset;
+        box-shadow: 0 -3px 0 rgba($blue, 0.5) inset;
         text-decoration:none;
       }
     }
@@ -185,11 +193,18 @@ PARTS
 
   .links {
     display: inline-block;
-    @extend .content;
+    font-family: $sans-serif;
 
     a {
+      box-shadow: 0 -4px 0 $blue-bright-pale inset;
       display: inline-block;
       margin-right: 5px;
+
+
+      &:hover {
+        box-shadow: 0 -4px 0 rgba($blue, 0.5) inset;
+        text-decoration:none;
+      }
     }
   }
 
