@@ -1,10 +1,12 @@
 ---
 ---
 
+$blue-dark: #525252;
 $blue: #1a71ac;
 $blue-bright: #0cceec;
 $blue-bright-pale: #8bf3fd;
 $grey: #8e8e8e;
+$grey-light: #c0c0c0;
 $light-grey: #c0c0c0;
 
 body > div:first-child {
@@ -133,7 +135,7 @@ PARTS
 
 #works {
   .project {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 
     a {
       box-shadow: 0 -4px 0 $blue-bright-pale inset;
@@ -147,8 +149,10 @@ PARTS
     }
   }
 
-  .keywords {
-    margin-top : 10px;
+  .content {
+    margin-top: 0px;
+    font-size: 16px;
+    color: #525252;
 
     a {
       box-shadow: 0 -2px 0 $blue-bright-pale inset;
@@ -161,8 +165,32 @@ PARTS
     }
   }
 
+  .keywords {
+    display: inline-block;
+    margin-top : 0px;
+    color: $grey-light;
+
+    a {
+      color: $grey-light;
+      box-shadow: 0 -2px 0 rgba($grey-light, 0.5) inset;
+      //border-bottom-width: 2px;
+
+      &:hover {
+        color: #525252;
+        box-shadow: 0 -2px 0 rgba($grey, 0.8) inset;
+        text-decoration:none;
+      }
+    }
+  }
+
   .links {
-    @extend .keywords;
+    display: inline-block;
+    @extend .content;
+
+    a {
+      display: inline-block;
+      margin-right: 5px;
+    }
   }
 
 }

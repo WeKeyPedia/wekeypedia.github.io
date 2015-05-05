@@ -48,6 +48,38 @@ and <a href="">web litteracy</a>.
   </div>
 </div><!-- /follow-us -->
 
+<!--
+<div class="row" id="about">
+  <div class="col-md-3"><h2>about</h2></div>
+  <div class="col-md-3">
+    <h3>mission statement</h3>
+
+    <p>The main purpose of our research group is to define wikipedia as a knowledge space oriented toward learning. The issue at stake is not only to assess the online encyclopedia as it sum of knowledge but to acknowledge the fact that it is a pure product of heterogenous collective intelligence. The main contribution is to propose a framework that allow to have a better understanding of wikipedia and escape its framing as a corpus but to show it as a dynamic network of texts and actors. That idea is already present in critical theory of litterature but the conjunction of contemporary computational power and new media allow to us actualize it.</p>
+    <p>The end game is too meet wikipedia mission statement and open its content to a broader audience both in term of demographics but also of mode of participations.</p>
+
+  </div>
+
+  <div class="col-md-3">
+    <h3>socio-semantic systems analytics</h3>
+
+    <p>The main purpose of our research group is to define wikipedia as a knowledge space oriented toward learning. The issue at stake is not only to assess the online encyclopedia as it sum of knowledge but to acknowledge the fact that it is a pure product of heterogenous collective intelligence. The main contribution is to propose a framework that allow to have a better understanding of wikipedia and escape its framing as a corpus but to show it as a dynamic network of texts and actors. That idea is already present in critical theory of litterature but the conjunction of contemporary computational power and new media allow to us actualize it.</p>
+    <p>The end game is too meet wikipedia mission statement and open its content to a broader audience both in term of demographics but also of mode of participations.</p>
+
+  </div>
+
+  <div class="col-md-3">
+    <h3>learning with wikipedia</h3>
+
+    <h4>learning by understanding</h4>
+    <p>Understanding what is the history of a wikipedia page (and inherto wikipedia itself) is a full part of what is needed to have a full understanding of the concept one might want to learn using this tool. Quality issues are one the main problem of wikipedia but because its content is produced by a complex collective motion process, wikipedia has the huge advantage to provide the possibility of a direct look of the interactions that results in a more or less description of the reality.</p>
+
+    <h4>learning by interacting</h4>
+    <p>From there it is also possible to push forward the active part of contributing to wikipedia by enabling wikipedia users to escape the usual divide between readers and editors. With the right recommandation system, we can orient users to the rigth space to ask questions (talk pages) and the right contributors to contact.</p>
+
+  </div>
+</div>--><!-- /about -->
+
+
 <div id="works" class="row">
   <div class="col-md-3"><h2>works</h2></div>
 
@@ -61,16 +93,36 @@ and <a href="">web litteracy</a>.
       <h3>{{ project.title }}</h3>
     {% endif %}
 
+    {% if project.content != nil %}
+      <div class="row">
+      <div class="content col-md-9">
+      {% if project.content contains "<!-- more -->" %}
+        {{ project.content | split:"<!-- more -->" | first }}
+      {% else %}
+        {{ project.content }}
+      {% endif %}
+      </div>
+      </div>
+    {% endif %}
+
     <div class="links">
     {% if project.github %}
       <a href="http://github.com/{{ project.github }}">
           <i class="fa fa-github-alt"></i> <span class="text">github</span>
       </a>
     {% endif %}
+    {% if project.documentation %}
+      <a href="{{ project.documentation }}">
+          <i class="fa fa-book"></i> <span class="text">documentation</span>
+      </a>
+    {% endif %}
     </div>
 
     {% if project.keywords %}
       <div class="keywords">
+
+      <i class="fa fa-tags"></i>
+
       {% for k in project.keywords %}
       <a href="">#{{ k }}</a>
       {% endfor %}

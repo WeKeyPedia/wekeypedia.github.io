@@ -5,7 +5,7 @@ keywords:
   - metrics
   - wikipedia
 ---
-
+<!-- more -->
 ## usability approaches
 
 ## sociological approaches
