@@ -2,17 +2,27 @@
 ---
 @import "css/kerning.css";
 
+/*******************************************************************************
+COLORS
+*******************************************************************************/
+
 $blue-dark: #525252;
+
 $blue: #1a71ac;
+
 $blue-bright: #0cceec;
 $blue-bright-pale: #8bf3fd;
+
 $grey: #8e8e8e;
 $grey-light: #c0c0c0;
-$light-grey: #c0c0c0;
 
 body > div:first-child {
   text-align: left;
 }
+
+/*******************************************************************************
+TYPES
+*******************************************************************************/
 
 // $serif: "EB Garamond", serif;
 $sans-rounded: "Varela Round", sans-serif;
@@ -47,7 +57,7 @@ GENERIC
     font-weight : 300;
     font-style: italic;
     line-height : 57px;
-    color: $light-grey;
+    color: $grey-light;
   }
 }
 
@@ -161,6 +171,8 @@ PARTS
     font-size: 16px;
     color: #525252;
     font-family: $serif;
+    // text-align: justify;
+    text-justify: newspaper;
 
     a {
       box-shadow: 0 -3px 0 $blue-bright-pale inset;
@@ -254,7 +266,7 @@ PARTS
     }
 
     .affiliation {
-      color: $light-grey;
+      color: $grey-light;
       text-align: center;
       margin-bottom: 10px;
       font-weight: normal;
@@ -271,7 +283,7 @@ PARTS
   text-align: center;
   margin: 30px 0;
   font-size: 0.8em;
-  color: $light-grey;
+  color: $grey-light;
 
   a {
     color: $grey;
