@@ -290,3 +290,25 @@ PARTS
     text-decoration: underline;
   }
 }
+
+.col-sm-12 {
+  text-align: center !important;
+
+  * {
+    text-align: center !important;
+  }
+
+  .description {
+    font-size: 2em !important;
+  }
+
+  h2 {
+    text-align: left !important;
+  }
+}
+
+#follow_us {
+  .col-sm-12 h2 {
+    text-align: center !important;
+  }
+}

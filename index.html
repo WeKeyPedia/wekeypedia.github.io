@@ -6,11 +6,11 @@ title: WeKeyPedia
 <div class="container-fluid text-center">
 
 <div class="row" id="logo">
-  <div class="col-md-3">
+  <div class="col-md-3 col-sm-12">
     <img src="/images/logo.svg" />
   </div>
 
-  <div class="col-md-9">
+  <div class="col-md-9 col-sm-12">
 <!--     <h1><span>w</span>eke<span>y</span>pe<span>d</span>ia</h1>
  -->
     <h1>wekeypedia</h1>
@@ -31,8 +31,8 @@ and <a href="">web litteracy</a>.
 </div><!-- /logo -->
 
 <div class="row" id="follow_us">
-  <div class="col-md-3"><h2>follow us</h2></div>
-  <div class="col-md-9">
+  <div class="col-md-3 col-sm-12"><h2>follow us</h2></div>
+  <div class="col-md-9 col-sm-12">
 
     <a class="btn btn-primary" href="http://twitter.com/wekeypedia">
       <span class="fa-stack fa-2x"><i class="fa fa-twitter-square fa-stack-2x"></i></span>
@@ -82,7 +82,7 @@ and <a href="">web litteracy</a>.
 
 
 <div id="works" class="row">
-  <div class="col-md-3"><h2>works</h2></div>
+  <div class="col-md-3 col-sm-12"><h2>works</h2></div>
 
   <div class="col-md-9">
   {% assign project_sorted =  site.projects | sort: "importance" %}
@@ -137,7 +137,7 @@ and <a href="">web litteracy</a>.
 </div><!-- /works -->
 
 <div id="talks" class="row">
-  <div class="col-md-3"><h2>talks</h2></div>
+  <div class="col-md-3 col-sm-12"><h2>talks</h2></div>
   <div class="col-md-9">
   {% for talk in site.talks %}
   <div class="talk">
@@ -153,7 +153,7 @@ and <a href="">web litteracy</a>.
 </div><!-- /talks -->
 
 <div id="workshops" class="row">
-  <div class="col-md-3"><h2>workshops</h2></div>
+  <div class="col-md-3 col-sm-12"><h2>workshops</h2></div>
   <div class="col-md-9">
   {% for workshop in site.workshops %}
   <div class="workshop">
@@ -180,17 +180,17 @@ and <a href="">web litteracy</a>.
 </div><!-- /workshops -->
 
 <div id="publications" class="row">
-  <div class="col-md-3"><h2>publications</h2></div>
+  <div class="col-md-3 col-sm-12"><h2>publications</h2></div>
   <div class="col-md-9">
     <div class="empty">no publication yet</div>
   </div>
 </div><!-- /publications -->
 
 <div class="row" id="team">
-  <div class="col-md-3"><h2>team</h2></div>
+  <div class="col-md-3 col-sm-12"><h2>team</h2></div>
   <div class="col-md-9">
   {% for member in site.members %}
-  <div class="member col-md-3">
+  <div class="member col-md-3  col-sm-3">
     <h4>{{ member.name }}</h4>
 
     <div class="affiliation">{{ member.affiliation }}</div>
