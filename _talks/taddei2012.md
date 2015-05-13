@@ -9,4 +9,4 @@ event:
   url: http://rencontres.wikimedia.fr/
 ---
 
-<iframe frameborder="0" width="560" height="315" src="//www.dailymotion.com/embed/video/xzoi3n" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" src="//www.dailymotion.com/embed/video/xzoi3n" allowfullscreen></iframe>
