@@ -1,5 +1,5 @@
 ---
-date: 2014
+date: 2014-01-01 00:00
 title: WeKeyPedia. Hannah Arendt fait du ski avec wikipedia
 speaker: tam kien duong
 event:

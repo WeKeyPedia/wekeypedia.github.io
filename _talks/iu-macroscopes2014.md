@@ -1,5 +1,5 @@
 ---
-date: 2014
+date: 2014-01-01 00:00
 title: "Scaling Up Learning Communities: ecology of open technologies for analytics and collective intelligence"
 speaker: tam kien duong
 event:

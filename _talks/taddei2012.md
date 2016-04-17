@@ -1,5 +1,5 @@
 ---
-date: 2012
+date: 2012-01-01 00:00
 title: Projet We-Key-Pedia
 speaker: francois taddei
 link: http://www.dailymotion.com/video/xzoi3n_rencontres-wikimedia-2012-we-key-pedia-franc-ois-taddei_tech
