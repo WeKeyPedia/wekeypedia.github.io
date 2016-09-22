@@ -161,6 +161,10 @@ PARTS
   .project {
     margin-bottom: 35px;
 
+    img {
+      width : 100%;
+    }
+
     a {
       box-shadow: 0 -4px 0 $blue-bright-pale inset;
       //border-bottom: 3px solid $blue-bright-pale;
